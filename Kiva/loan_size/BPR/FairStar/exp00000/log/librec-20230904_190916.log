@@ -1,0 +1,38 @@
+23/09/04 19:09:16 INFO TextDataConvertor: Dataset: [../../data/rating_5000_cls_hc_10core_iterative.csv]
+java.nio.file.NoSuchFileException: ../../data/rating_5000_cls_hc_10core_iterative.csv
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+	at java.base/java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:219)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:276)
+	at java.base/java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:322)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2717)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2797)
+	at net.librec.data.convertor.TextDataConvertor.readData(TextDataConvertor.java:166)
+	at net.librec.data.convertor.TextDataConvertor.processData(TextDataConvertor.java:139)
+	at net.librec.data.model.TextDataModel.buildConvert(TextDataModel.java:68)
+	at net.librec.data.model.AbstractDataModel.buildDataModel(AbstractDataModel.java:157)
+	at net.that_recsys_lab.auto.AutoRecommenderJob.setData(AutoRecommenderJob.java:102)
+	at net.that_recsys_lab.auto.AutoRecommenderJob.<init>(AutoRecommenderJob.java:72)
+	at net.that_recsys_lab.auto.SingleJobRunner.main(SingleJobRunner.java:25)
+23/09/04 19:09:16 INFO TextDataModel: Transform data to Convertor successfully!
+java.lang.NullPointerException
+	at net.librec.data.splitter.KCVDataSplitter.splitData(KCVDataSplitter.java:101)
+	at net.librec.data.splitter.KCVDataSplitter.splitData(KCVDataSplitter.java:151)
+	at net.librec.data.model.AbstractDataModel.buildSplitter(AbstractDataModel.java:102)
+	at net.librec.data.model.AbstractDataModel.buildDataModel(AbstractDataModel.java:161)
+	at net.that_recsys_lab.auto.AutoRecommenderJob.setData(AutoRecommenderJob.java:102)
+	at net.that_recsys_lab.auto.AutoRecommenderJob.<init>(AutoRecommenderJob.java:72)
+	at net.that_recsys_lab.auto.SingleJobRunner.main(SingleJobRunner.java:25)
+23/09/04 19:09:16 INFO RecommenderJob: CheckCmd: START
+23/09/04 19:09:16 INFO RecommenderJob: CheckCmd: Checking class names
+23/09/04 19:09:16 INFO RecommenderJob: Warning: rec.similarity.class is null.
+23/09/04 19:09:16 INFO RecommenderJob: CheckCmd: Checking files and paths
+23/09/04 19:09:16 INFO RecommenderJob: Error: dfs.data.dir ../../data does not exist.
+23/09/04 19:09:16 INFO RecommenderJob: Error: Data input path ../../data/rating_5000_cls_hc_10core_iterative.csv does not exist.
+23/09/04 19:09:16 INFO RecommenderJob: CheckCmd: FINISH
+23/09/04 19:09:16 INFO RecommenderJob: Average Evaluation Result of Cross Validation:

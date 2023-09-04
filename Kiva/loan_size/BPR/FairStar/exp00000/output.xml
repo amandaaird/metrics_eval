@@ -32,27 +32,93 @@
       <message>Completed</message>
       <date>2023-09-04 12:38:46.020740</date>
     </status>
+    <status>
+      <message>Executing</message>
+      <date>2023-09-04 19:10:09.152557</date>
+    </status>
+    <status>
+      <message>Completed</message>
+      <date>2023-09-04 19:10:14.888107</date>
+    </status>
+    <status>
+      <message>Executing</message>
+      <date>2023-09-04 19:12:40.994956</date>
+    </status>
+    <status>
+      <message>Completed</message>
+      <date>2023-09-04 19:12:47.201302</date>
+    </status>
+    <status>
+      <message>Executing</message>
+      <date>2023-09-04 19:30:43.480088</date>
+    </status>
+    <status>
+      <message>Completed</message>
+      <date>2023-09-04 19:30:49.777049</date>
+    </status>
+    <status>
+      <message>Executing</message>
+      <date>2023-09-04 19:34:28.290145</date>
+    </status>
+    <status>
+      <message>Completed</message>
+      <date>2023-09-04 19:34:34.511360</date>
+    </status>
+    <status>
+      <message>Executing</message>
+      <date>2023-09-04 19:41:03.585359</date>
+    </status>
+    <status>
+      <message>Completed</message>
+      <date>2023-09-04 19:41:09.701319</date>
+    </status>
+    <status>
+      <message>Executing</message>
+      <date>2023-09-04 19:45:39.193186</date>
+    </status>
+    <status>
+      <message>Completed</message>
+      <date>2023-09-04 19:45:45.900329</date>
+    </status>
   </statuses>
   <results>
     <folds>
       <cv id="1">
-        <metric name="NormalizedDCGEvaluator">0.05604190257250731</metric>
-        <metric name="PStatisticalParityEvaluator">-0.6978010994503031</metric>
+        <metric name="NormalizedDCGEvaluator">0.08568149034634585</metric>
+        <metric name="PStatisticalParityEvaluator">-0.6975546305931594</metric>
         <metric name="ndcg_metric.py">0.10002169481323736</metric>
         <metric name="psp.py">-0.6968546919677672</metric>
       </cv>
       <cv id="2">
-        <metric name="NormalizedDCGEvaluator">4.6200121354957453E-4</metric>
-        <metric name="PStatisticalParityEvaluator">-0.6876903870162586</metric>
+        <metric name="NormalizedDCGEvaluator">0.10070253496483311</metric>
+        <metric name="PStatisticalParityEvaluator">-0.6968546919677948</metric>
         <metric name="ndcg_metric.py">0.10030526717100181</metric>
         <metric name="psp.py">-0.7063179699637494</metric>
       </cv>
       <cv id="3">
-        <metric name="NormalizedDCGEvaluator"/>
-        <metric name="ndcg_metric.py">0</metric>
-        <metric name="psp.py">0</metric>
+        <metric name="NormalizedDCGEvaluator">0.10268844179327614</metric>
+        <metric name="PStatisticalParityEvaluator">-0.7176931106472129</metric>
+        <metric name="ndcg_metric.py">0.10203731293114938</metric>
+        <metric name="psp.py">-0.7176931106471817</metric>
+      </cv>
+      <cv id="4">
+        <metric name="NormalizedDCGEvaluator">0.09341839992565085</metric>
+        <metric name="PStatisticalParityEvaluator">-0.7039068564036525</metric>
+        <metric name="ndcg_metric.py">0.09261601682449075</metric>
+        <metric name="psp.py">-0.7039068564036224</metric>
+      </cv>
+      <cv id="5">
+        <metric name="NormalizedDCGEvaluator">0.1010690682313231</metric>
+        <metric name="PStatisticalParityEvaluator">-0.7063179699637794</metric>
+        <metric name="ndcg_metric.py">0.08503312229686932</metric>
+        <metric name="psp.py">-0.6975546305931323</metric>
       </cv>
     </folds>
-    <averages/>
+    <averages>
+      <metric name="NormalizedDCGEvaluator">0.09671198705228581</metric>
+      <metric name="PStatisticalParityEvaluator">-0.7044654519151198</metric>
+      <metric name="ndcg_metric.py">0.09600268280734972</metric>
+      <metric name="psp.py">-0.7044654519150906</metric>
+    </averages>
   </results>
 </experiment>
