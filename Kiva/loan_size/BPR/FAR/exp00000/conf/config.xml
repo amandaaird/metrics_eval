@@ -2,7 +2,7 @@
 	<random-seed>202110</random-seed>
 	<thread-count>1</thread-count>
 	<data>
-		<data-dir>../../data</data-dir>
+		<data-dir>../../../data</data-dir>
 		<format>UIR</format>
 		<data-file format="text">rating_5000_cls_hc_10core_iterative.csv</data-file>
 	</data>
@@ -36,19 +36,19 @@
 	
 	<metric>
 		<ranking>true</ranking>
-		<list-size>50</list-size>
+		<list-size>10</list-size>
 		<class>ndcg,psp</class>
 		<protected-feature type="fea:loan_buck_5">loan_buck_5</protected-feature>
 
 		<script src="system" lang="python3">
 			<script-name>rank_biased_overlap.py</script-name>
 			<param name="list_size">10</param>
-			<param name="protected_feature">loan_buck_5</param>
+
 		</script>
 		<script src="system" lang="python3">
 			<script-name>kendall_tau.py</script-name>
 			<param name="list_size">10</param>
-			<param name="protected_feature">loan_buck_5</param>
+
 		</script>
 		<script src="system" lang="python3">
 			<script-name>lowest_item_promoted.py</script-name>

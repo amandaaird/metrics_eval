@@ -48,43 +48,51 @@
       <message>Python-side metrics completed</message>
       <date>2023-05-22 20:02:42.247950</date>
     </status>
+    <status>
+      <message>Executing</message>
+      <date>2023-09-04 20:05:32.274792</date>
+    </status>
+    <status>
+      <message>Completed</message>
+      <date>2023-09-04 20:05:39.207149</date>
+    </status>
   </statuses>
   <results>
     <folds>
       <cv id="1">
-        <metric name="NormalizedDCGEvaluator">0.0850714684905408</metric>
-        <metric name="PStatisticalParityEvaluator">-0.6665452653486391</metric>
+        <metric name="NormalizedDCGEvaluator">0.08442303650076595</metric>
+        <metric name="PStatisticalParityEvaluator">-0.3816337148803169</metric>
         <metric name="ndcg_metric.py">0.10292083629039207</metric>
         <metric name="psp.py">-0.3351702625422407</metric>
       </cv>
       <cv id="2">
-        <metric name="NormalizedDCGEvaluator">0.10028617710753876</metric>
-        <metric name="PStatisticalParityEvaluator">-0.6677306992462099</metric>
+        <metric name="NormalizedDCGEvaluator">0.10034980699751998</metric>
+        <metric name="PStatisticalParityEvaluator">-0.3915258643098368</metric>
         <metric name="ndcg_metric.py">0.1028772483525428</metric>
         <metric name="psp.py">-0.353495598135681</metric>
       </cv>
       <cv id="3">
-        <metric name="NormalizedDCGEvaluator">0.10192146612145361</metric>
-        <metric name="PStatisticalParityEvaluator">-0.6696659707724852</metric>
+        <metric name="NormalizedDCGEvaluator">0.10299611492452129</metric>
+        <metric name="PStatisticalParityEvaluator">-0.4021398747390251</metric>
         <metric name="ndcg_metric.py">0.10580151254132102</metric>
         <metric name="psp.py">-0.35245302713987475</metric>
       </cv>
       <cv id="4">
-        <metric name="NormalizedDCGEvaluator">0.09140862534275032</metric>
-        <metric name="PStatisticalParityEvaluator">-0.6690711513583882</metric>
+        <metric name="NormalizedDCGEvaluator">0.0906887131092066</metric>
+        <metric name="PStatisticalParityEvaluator">-0.390375161707616</metric>
         <metric name="ndcg_metric.py">0.09345396031210927</metric>
         <metric name="psp.py">-0.3347994825355757</metric>
       </cv>
       <cv id="5">
-        <metric name="NormalizedDCGEvaluator">0.100938772221909</metric>
-        <metric name="PStatisticalParityEvaluator">-0.6708855515277499</metric>
+        <metric name="NormalizedDCGEvaluator">0.10077976027348429</metric>
+        <metric name="PStatisticalParityEvaluator">-0.40668047643706445</metric>
         <metric name="ndcg_metric.py">0.08666775931439454</metric>
         <metric name="psp.py">-0.32643080124869933</metric>
       </cv>
     </folds>
     <averages>
-      <metric name="NormalizedDCGEvaluator">0.09592530185683848</metric>
-      <metric name="PStatisticalParityEvaluator">-0.6687797276506944</metric>
+      <metric name="NormalizedDCGEvaluator">0.09584748636109963</metric>
+      <metric name="PStatisticalParityEvaluator">-0.39447101841477183</metric>
       <metric name="ndcg_metric.py">0.09834426336215193</metric>
       <metric name="psp.py">-0.3404698343204143</metric>
     </averages>

@@ -2,7 +2,7 @@
 	<random-seed>202110</random-seed>
 	<thread-count>1</thread-count>
 	<data>
-		<data-dir>../../data</data-dir>
+		<data-dir>../../../data</data-dir>
 		<format>UIR</format>
 		<data-file format="text">rating_5000_cls_hc_10core_iterative.csv</data-file>
 	</data>
@@ -23,30 +23,35 @@
 	
 	<alg>
 		<class>bpr</class>
-		<learn-rate>0.01</learn-rate>
-		<learn-rate-max>0.1</learn-rate-max>
-	<learn-rate-decay>1.0</learn-rate-decay>
+		<learn-rate>0.001</learn-rate>
+		<learn-rate-max>0.01</learn-rate-max>
+		<learn-rate-decay>1.0</learn-rate-decay>
 		<bold-driver>true</bold-driver>
-		<iterator-max>100</iterator-max>
-		<user-reg>0.004012413952745706</user-reg>
-		<item-reg>0.15634316341184665</item-reg>
-		<num-factors type="discrete">43</num-factors>
-		<early-stop>true</early-stop>
+		<iterator-max>50</iterator-max>
+		<user-reg>0.718846</user-reg>
+		<item-reg>0.003417</item-reg>
+		<num-factors type="discrete">31</num-factors>
+	<early-stop>true</early-stop>
 	</alg>
 	
 	<metric>
 		<ranking>true</ranking>
-		<list-size>50</list-size>
+		<list-size>10</list-size>
 		<class>ndcg,psp</class>
 		<protected-feature type="fea:loan_buck_5">loan_buck_5</protected-feature>
 
 		<script src="system" lang="python3">
-			<script-name>ndcg_metric.py</script-name>
+			<script-name>rank_biased_overlap.py</script-name>
 			<param name="list_size">10</param>
-		</script>
 
+		</script>
 		<script src="system" lang="python3">
-			<script-name>psp.py</script-name>
+			<script-name>kendall_tau.py</script-name>
+			<param name="list_size">10</param>
+
+		</script>
+		<script src="system" lang="python3">
+			<script-name>lowest_item_promoted.py</script-name>
 			<param name="list_size">10</param>
 			<param name="protected_feature">loan_buck_5</param>
 		</script>
@@ -54,9 +59,9 @@
 
 	<rerank>
 		<script lang="python3" src="system">
-			<script-name>pfar_rerank.py</script-name>
+			<script-name>fairstar_rerank.py</script-name>
 			<param name="max_len">10</param>
-			<param var="true" name="lambda">0.9</param><param name="binary">False</param>
+			<param var="true" name="alpha">0.0</param><param name="binary">False</param>
 			<param name="protected_feature" type="fea:loan_buck_5">loan_buck_5</param>
 		</script>
 	</rerank>
