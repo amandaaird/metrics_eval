@@ -46,12 +46,17 @@
 		<protected-feature ref="fea:loan_buck_5"/>
 
 		<script src="system" lang="python3">
-			<script-name>ndcg_metric.py</script-name>
+			<script-name>rank_biased_overlap.py</script-name>
 			<param name="list_size">10</param>
+			<param name="protected_feature">loan_buck_5</param>
 		</script>
-
 		<script src="system" lang="python3">
-			<script-name>psp.py</script-name>
+			<script-name>kendall_tau.py</script-name>
+			<param name="list_size">10</param>
+			<param name="protected_feature">loan_buck_5</param>
+		</script>
+		<script src="system" lang="python3">
+			<script-name>lowest_item_promoted.py</script-name>
 			<param name="list_size">10</param>
 			<param name="protected_feature">loan_buck_5</param>
 		</script>
@@ -59,19 +64,11 @@
 
 	<rerank>
 		<script lang="python3" src="system">
-			<script-name>far_rerank.py</script-name>
+			<script-name>fairstar_rerank.py</script-name>
 			<param name="max_len">10</param>
-			<param name="lambda">
+			<param name="alpha">
 				<value>0.0</value>
-                <value>0.1</value>
-				<value>0.2</value>
-                <value>0.3</value>
-				<value>0.4</value>
-                <value>0.5</value>
-				<value>0.6</value>
-                <value>0.7</value>
-				<value>0.8</value>
-                <value>0.9</value>
+
 			</param>
 			<param name="binary">False</param>
 			<param name="protected_feature" ref="fea:loan_buck_5"/>
