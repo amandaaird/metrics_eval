@@ -1,0 +1,13 @@
+23/09/04 12:33:30 INFO TextDataConvertor: Dataset: [../../data/rating_5000_cls_hc_10core_iterative.csv]
+23/09/04 12:33:30 INFO TextDataConvertor: DataSet: ...ng_5000_cls_hc_10core_iterative.csv is finished
+23/09/04 12:33:30 INFO TextDataConvertor: rating Scale (real): 3.0 to 5.0
+23/09/04 12:33:30 INFO TextDataConvertor: user number: 4005,	 item number is: 2673
+23/09/04 12:33:30 INFO TextDataModel: Transform data to Convertor successfully!
+23/09/04 12:33:31 INFO TextDataModel: Split data to train Set and test Set successfully!
+23/09/04 12:33:31 INFO TextDataModel: Feature appender loaded successfully!
+23/09/04 12:33:31 INFO RecommenderJob: CheckCmd: START
+23/09/04 12:33:31 INFO RecommenderJob: CheckCmd: Checking class names
+23/09/04 12:33:31 INFO RecommenderJob: Warning: rec.similarity.class is null.
+23/09/04 12:33:31 INFO RecommenderJob: CheckCmd: Checking files and paths
+23/09/04 12:33:31 INFO RecommenderJob: CheckCmd: FINISH
+23/09/04 12:33:31 INFO RecommenderJob: Average Evaluation Result of Cross Validation:

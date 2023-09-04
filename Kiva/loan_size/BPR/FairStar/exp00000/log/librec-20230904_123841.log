@@ -1,0 +1,111 @@
+23/09/04 12:38:42 INFO TextDataConvertor: Dataset: [../../data/rating_5000_cls_hc_10core_iterative.csv]
+23/09/04 12:38:42 INFO TextDataConvertor: DataSet: ...ng_5000_cls_hc_10core_iterative.csv is finished
+23/09/04 12:38:42 INFO TextDataConvertor: rating Scale (real): 3.0 to 5.0
+23/09/04 12:38:42 INFO TextDataConvertor: user number: 4005,	 item number is: 2673
+23/09/04 12:38:42 INFO TextDataModel: Transform data to Convertor successfully!
+23/09/04 12:38:43 INFO TextDataModel: Split data to train Set and test Set successfully!
+23/09/04 12:38:43 INFO TextDataModel: Feature appender loaded successfully!
+23/09/04 12:38:43 INFO TextDataConvertor: Dataset: [../../data/split/cv_1/train.txt]
+23/09/04 12:38:43 INFO TextDataConvertor: DataSet: ../../data/split/cv_1/train.txt is finished
+23/09/04 12:38:43 INFO TextDataConvertor: rating Scale (real): 3.0 to 5.0
+23/09/04 12:38:43 INFO TextDataConvertor: user number: 4005,	 item number is: 2673
+23/09/04 12:38:43 INFO TextDataModel: Transform data to Convertor successfully!
+23/09/04 12:38:43 INFO TextDataConvertor: Dataset: [../../data/split/cv_1/test.txt]
+23/09/04 12:38:43 INFO TextDataConvertor: DataSet: ../../data/split/cv_1/test.txt is finished
+23/09/04 12:38:43 INFO TextDataConvertor: rating Scale (real): 3.0 to 5.0
+23/09/04 12:38:43 INFO TextDataConvertor: user number: 4005,	 item number is: 2673
+23/09/04 12:38:44 INFO TextDataModel: Split data to train Set and test Set successfully!
+23/09/04 12:38:44 INFO TextDataModel: Data cardinality of training is 55185
+23/09/04 12:38:44 INFO TextDataModel: Data cardinality of testing is 55186
+23/09/04 12:38:44 INFO TextDataModel: Feature appender loaded successfully!
+23/09/04 12:38:44 INFO OracleAlgo: Job Setup completed.
+** Training model in OracleAlgo **
+23/09/04 12:38:44 INFO TextDataConvertor: Dataset: [exp00000/result/out-1.txt]
+23/09/04 12:38:44 INFO TextDataConvertor: DataSet: exp00000/result/out-1.txt is finished
+23/09/04 12:38:44 INFO TextDataConvertor: user number: 4005,	 item number is: 2673
+23/09/04 12:38:44 INFO OracleAlgo: Job Train completed.
+23/09/04 12:38:44 INFO OracleAlgo: begin recommend
+23/09/04 12:38:44 INFO OracleAlgo: end recommend
+23/09/04 12:38:44 INFO RecommenderJob: Evaluator info:NormalizedDCGEvaluator is 0.05604190257250731
+23/09/04 12:38:45 INFO RecommenderJob: Evaluator info:PStatisticalParityEvaluator is -0.6978010994503031
+23/09/04 12:38:45 INFO TextDataConvertor: Dataset: [../../data/split/cv_2/train.txt]
+23/09/04 12:38:45 INFO TextDataConvertor: DataSet: ../../data/split/cv_2/train.txt is finished
+23/09/04 12:38:45 INFO TextDataConvertor: rating Scale (real): 3.0 to 5.0
+23/09/04 12:38:45 INFO TextDataConvertor: user number: 4005,	 item number is: 2673
+23/09/04 12:38:45 INFO TextDataModel: Transform data to Convertor successfully!
+23/09/04 12:38:45 INFO TextDataConvertor: Dataset: [../../data/split/cv_2/test.txt]
+23/09/04 12:38:45 INFO TextDataConvertor: DataSet: ../../data/split/cv_2/test.txt is finished
+23/09/04 12:38:45 INFO TextDataConvertor: rating Scale (real): 3.0 to 5.0
+23/09/04 12:38:45 INFO TextDataConvertor: user number: 4005,	 item number is: 2673
+23/09/04 12:38:45 INFO TextDataModel: Split data to train Set and test Set successfully!
+23/09/04 12:38:45 INFO TextDataModel: Data cardinality of training is 55186
+23/09/04 12:38:45 INFO TextDataModel: Data cardinality of testing is 55185
+23/09/04 12:38:45 INFO TextDataModel: Feature appender loaded successfully!
+23/09/04 12:38:45 INFO OracleAlgo: Job Setup completed.
+** Training model in OracleAlgo **
+23/09/04 12:38:45 INFO TextDataConvertor: Dataset: [exp00000/result/out-2.txt]
+23/09/04 12:38:45 INFO TextDataConvertor: DataSet: exp00000/result/out-2.txt is finished
+23/09/04 12:38:45 INFO TextDataConvertor: user number: 4005,	 item number is: 2673
+23/09/04 12:38:45 INFO OracleAlgo: Job Train completed.
+23/09/04 12:38:45 INFO OracleAlgo: begin recommend
+23/09/04 12:38:45 INFO OracleAlgo: end recommend
+23/09/04 12:38:45 INFO RecommenderJob: Evaluator info:NormalizedDCGEvaluator is 4.6200121354957453E-4
+23/09/04 12:38:45 INFO RecommenderJob: Evaluator info:PStatisticalParityEvaluator is -0.6876903870162586
+23/09/04 12:38:45 INFO TextDataConvertor: Dataset: [../../data/split/cv_3/train.txt]
+java.nio.file.NoSuchFileException: ../../data/split/cv_3/train.txt
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:219)
+	at java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:276)
+	at java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:322)
+	at java.nio.file.Files.walkFileTree(Files.java:2662)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at net.librec.data.convertor.TextDataConvertor.readData(TextDataConvertor.java:166)
+	at net.librec.data.convertor.TextDataConvertor.processData(TextDataConvertor.java:139)
+	at net.librec.data.model.TextDataModel.buildConvert(TextDataModel.java:68)
+	at net.librec.data.model.AbstractDataModel.buildDataModel(AbstractDataModel.java:157)
+	at net.that_recsys_lab.auto.AutoRecommenderJob.setData(AutoRecommenderJob.java:102)
+	at net.that_recsys_lab.auto.cmd.SplitCmd.execute(SplitCmd.java:50)
+	at net.that_recsys_lab.auto.cmd.SeqCmd.execute(SeqCmd.java:22)
+	at net.that_recsys_lab.auto.cmd.SeqCmd.execute(SeqCmd.java:22)
+	at net.that_recsys_lab.auto.AutoRecommenderJob.runJob(AutoRecommenderJob.java:198)
+	at net.that_recsys_lab.auto.SingleJobRunner.main(SingleJobRunner.java:27)
+23/09/04 12:38:45 INFO TextDataModel: Transform data to Convertor successfully!
+23/09/04 12:38:45 INFO TextDataConvertor: Dataset: [../../data/split/cv_3/test.txt]
+java.nio.file.NoSuchFileException: ../../data/split/cv_3/test.txt
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:219)
+	at java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:276)
+	at java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:322)
+	at java.nio.file.Files.walkFileTree(Files.java:2662)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at net.librec.data.convertor.TextDataConvertor.readData(TextDataConvertor.java:166)
+	at net.librec.data.convertor.TextDataConvertor.processData(TextDataConvertor.java:139)
+	at net.librec.data.splitter.GivenTestSetDataSplitter.splitData(GivenTestSetDataSplitter.java:88)
+	at net.librec.data.model.AbstractDataModel.buildSplitter(AbstractDataModel.java:102)
+	at net.librec.data.model.AbstractDataModel.buildDataModel(AbstractDataModel.java:161)
+	at net.that_recsys_lab.auto.AutoRecommenderJob.setData(AutoRecommenderJob.java:102)
+	at net.that_recsys_lab.auto.cmd.SplitCmd.execute(SplitCmd.java:50)
+	at net.that_recsys_lab.auto.cmd.SeqCmd.execute(SeqCmd.java:22)
+	at net.that_recsys_lab.auto.cmd.SeqCmd.execute(SeqCmd.java:22)
+	at net.that_recsys_lab.auto.AutoRecommenderJob.runJob(AutoRecommenderJob.java:198)
+	at net.that_recsys_lab.auto.SingleJobRunner.main(SingleJobRunner.java:27)
+Exception in thread "main" java.lang.NullPointerException
+	at net.librec.data.splitter.GivenTestSetDataSplitter.splitData(GivenTestSetDataSplitter.java:99)
+	at net.librec.data.model.AbstractDataModel.buildSplitter(AbstractDataModel.java:102)
+	at net.librec.data.model.AbstractDataModel.buildDataModel(AbstractDataModel.java:161)
+	at net.that_recsys_lab.auto.AutoRecommenderJob.setData(AutoRecommenderJob.java:102)
+	at net.that_recsys_lab.auto.cmd.SplitCmd.execute(SplitCmd.java:50)
+	at net.that_recsys_lab.auto.cmd.SeqCmd.execute(SeqCmd.java:22)
+	at net.that_recsys_lab.auto.cmd.SeqCmd.execute(SeqCmd.java:22)
+	at net.that_recsys_lab.auto.AutoRecommenderJob.runJob(AutoRecommenderJob.java:198)
+	at net.that_recsys_lab.auto.SingleJobRunner.main(SingleJobRunner.java:27)
